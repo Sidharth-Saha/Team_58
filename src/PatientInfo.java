@@ -70,4 +70,16 @@ grid.add(Bloodpressure, 0, 5);
 TextField BP = new TextField();
 grid.add(BP, 1, 5);
 
+    Button btn = new Button();
+btn.setText("Update");
+grid.add(btn, 0, 6);
+btn.setOnAction(new EventHandler() {
+	public void handle(ActionEvent event) {
+		this.birthday = birthday;
+		this.height = height;
+		this.temperature = temperature;
+		this.weight = weight;
+		this.bloodPressure = bloodPressure;
+}
+}   
 }
